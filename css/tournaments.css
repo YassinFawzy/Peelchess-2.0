@@ -1,0 +1,201 @@
+.navbar{
+    background-color: rgb(30, 30, 30);
+    z-index: 1;
+}
+.navbar ul li a{
+    color: white;
+}
+.navbar ul li .active{
+    border-bottom: 3px solid white;
+}
+.navbar ul li a:hover{
+    border-bottom: 3px solid white;
+    transition: 0.1s ease-in;
+}
+
+.event-container{
+    height: 80vh;
+    padding-top: 85px;
+    padding-left: 10%;
+    background: url(../assets/events.svg) no-repeat ;
+    background-size: cover;
+    color: white;
+    z-index: 100;
+}
+.event-container h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.event-container h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.event-container p{
+    font-size: 16px;
+    font-weight: 300;
+    width: 45%;
+}
+.event-container button{
+    width: 10%;
+    height: 10%;
+    background-color: #DE4830;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.event-container button:hover{
+    filter: brightness(90%);
+}
+.time{
+    display: flex;
+    align-items: center;
+}
+.time img{
+    margin: 2% 0;
+    width: 25px;
+    height: 25px;
+}
+.time p{
+    margin-left: 1%;
+}
+
+.upcoming-container{
+    color: white;
+    height: 100vh;
+    width: 100%;
+    padding-top: 2%;
+    background: url(../assets/wave.svg) no-repeat;
+    background-color: #7EA650;
+}
+.upcoming-container h1{
+    font-size: 60px;
+    font-weight: 500;
+    margin-left: 10%;
+}
+
+.calendar{
+    width: 80%;
+    height: 85%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+.tourny{
+    color: black;
+    display: flex;
+    height: 23%;
+    width: 100%;
+    background: white;
+    margin-bottom: 2%;
+    border-radius: 15px;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 17%;
+    height: 100%;
+    box-shadow: 15px green;
+    border-right: 1px solid black;
+}
+.date .day{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.information{
+    width: 90%;
+    height: 100%;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+.tourny-title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1%;
+}
+.register{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    height: 20%;
+}
+.register .text-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+.register .text-time img{
+    height: 25px;
+    width: 25px;
+    margin-right: 1%;
+}
+
+.register button{
+    margin-right: 5%;
+    width: 15%;
+    height: 100%;
+    background-color: #DE4830;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.register button:hover{
+    filter: brightness(90%);
+}
+
+#registration{
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50%;
+    width: 20%;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(245, 245, 245);
+    overflow: hidden;
+}
+#registration form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#registration form .input{
+    width: 70%;
+    height: 10%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background-color: transparent;
+    margin: 2% 0;
+}
+.submit{
+    width: 70%;
+    height: 10%;
+    background-color: #DE4830;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./assets/icon.png">
+        <link rel="stylesheet" href="./css/navbar.css">
+        <link rel="stylesheet" href="./css/tournaments.css">
+        <title>Tournaments: Register Now!!</title>
+    </head>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html">
+                <img src="assets/Logo-white.svg" alt />
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active">Tournaments</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <body>
+        <dialog id="registration">
+            <button onclick="closeModal()" style="border: none; background: transparent; font-size: 18px; font-weight: 700; cursor: pointer; float: right;">X</button>
+            <form action="">
+                <input class="input" type="email" placeholder="Email">
+                <input class="input" type="text" placeholder="Chess.com Username">
+                <input class="input" type="text" placeholder="Instagram (optional)">
+                <input class="submit" type="submit" value="Register Now">
+            </form>
+        </dialog>
+        <div class="event-container">
+            <h1>Tournaments</h1>
+            <h3 class="tourny-title">Halloween Chess Tournament</h3>
+            <p>Welcome to the electrifying world of competitive chess! Our chess
+                tournament brings together brilliant minds from all corners of
+                the globe, where strategy and intellect take center stage.
+                Whether you're a seasoned grandmaster or just beginning your
+                chess journey, our tournament offers a thrilling platform to
+                test your skills and engage in intense, cerebral battles on the
+                64 squares. Join us as we celebrate the timeless beauty of this
+                ancient game and witness the triumphs and upsets that unfold on
+                the board. Checkmate boredom and step into a world where every
+                move matters!</p>
+            <div class="time">
+                <img src="assets/time-inverted.svg">
+                <p>Saturday, October 31st, 2023 @ 10 p.m</p>
+            </div>
+            <button onclick="showModal()">Register Now</button>
+        </div>
+
+        <div class="upcoming-container">
+            <h1>Upcoming Tournaments</h1>
+            <div class="calendar">
+                <div class="tourny">
+                    <div class="date">
+                        <p class="day">31</p>
+                        <p class="month">October</p>
+                    </div>
+                    <div class="information">
+                        <p class="tourny-title">Halloween Tournament</p>
+                        <p class="tourny-desc">Rounds: 5 | System: Swiss | Time Control: 10 minutes | Platform: Offical Peel Chess.com</p>
+                        <div class="register">
+                            <div class="text-time">
+                                <img src="./assets/time.svg" alt="">
+                                <p>10 A.M</p>
+                            </div>
+                            <button>Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tourny">
+                    <div class="date">
+                        <p class="day">25</p>
+                        <p class="month">December</p>
+                    </div>
+                    <div class="information">
+                        <p class="tourny-title">Christmas Tournament</p>
+                        <p class="tourny-desc">Rounds: 5 | System: Swiss | Time Control: 10 minutes | Platform: Offical Peel Chess.com</p>
+                        <div class="register">
+                            <div class="text-time">
+                                <img src="./assets/time.svg" alt="">
+                                <p>10 A.M</p>
+                            </div>
+                            <button>Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tourny">
+                    <div class="date">
+                        <p class="day">11</p>
+                        <p class="month">September</p>
+                    </div>
+                    <div class="information">
+                        <p class="tourny-title">Twin Tournament</p>
+                        <p class="tourny-desc">Rounds: 5 | System: Swiss | Time Control: 10 minutes | Platform: Offical Peel Chess.com</p>
+                        <div class="register">
+                            <div class="text-time">
+                                <img src="./assets/time.svg" alt="">
+                                <p>10 A.M</p>
+                            </div>
+                            <button>Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/tournaments.js"></script>
+    </body>
+</html>
