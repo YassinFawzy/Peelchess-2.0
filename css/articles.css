@@ -20,6 +20,9 @@
     height: 100%;
     width: 100%;
     padding-top: 85px;
+    background: url(../assets/default-background.svg) no-repeat;
+    background-size: cover;
+    background-color: #F8F8F8;
 }
 
 .article-container{
@@ -28,7 +31,6 @@
     flex-wrap: wrap;
     height: 100%;
     width: 80%;
-    margin-top: 2%;
 }
 
 .article-box{
@@ -49,7 +51,7 @@
     text-decoration: none;
 }
 .article-box:hover{
-    transform: translateY(-3%);
+    transform: translateY(-2%);
 }
 .article-img{
     height: 60%;
