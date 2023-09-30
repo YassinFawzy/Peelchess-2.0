@@ -54,3 +54,40 @@
     border-bottom: 3px solid white;
     transition: 0.1s ease-in;
 }
+
+/*---------------------------------------- LOADER SECTION ----------------------------------------*/
+
+.loader-container{
+    position: fixed;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+}
+.loader-container div{
+    width: 480px;
+    height: 256px;
+    position: absolute;
+}
+.random{
+    width: 480px;
+    height: 256px;
+    overflow: hidden;
+}
+.unloaded{
+    background: url(../assets/pawn-loader.svg) no-repeat;
+    background-size: contain;
+}
+.loaded{
+    background: url(../assets/pawn-loader-full.svg) no-repeat;
+    background-size: cover;
+    height: 256px;
+    animation: loading 3s linear none infinite;
+}
+@keyframes loading{
+    from{width: 0;}
+    to{width: 100%;}
+}
