@@ -57,6 +57,7 @@
     position: relative;
     right: 100%;
     font-size: 18px;
+    font-weight: 400;
     width: 75%;
     animation: fade-in 1s ease-in 1s;
     animation-fill-mode: forwards;
@@ -116,6 +117,8 @@
 }
 
 .toc .text{
+    display: flex;
+    align-items: center;
     width: 70%;
     border-bottom: 1px solid black;
 }
@@ -164,4 +167,60 @@
     text-align: center;
     font-weight: 500;
     width: 80%;
+}
+
+@media screen and (max-width: 915px) {
+    .first-container{
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .text-container{
+        background-color: rgb(50, 50, 50, 0.5);
+        border-radius: 25px;
+        width: 80%;
+    }
+    .text-container p{
+        font-size: 24px;
+    }
+    .toc{
+        width: 45%;
+    }
+    .toc .text a{
+        font-size: 13px;
+    }
+    .mission-title{
+        font-size: 20px;
+    }
+    .mission-desc{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text-container{
+        background-color: rgb(50, 50, 50, 0.5);
+        border-radius: 25px;
+        width: 80%;
+    }
+    .text-container h1, .ct{
+        font-size: 20px;
+    }
+    .text-container h3{
+        font-size: 18px;
+    }
+    .text-container p{
+        font-size: 16px;
+    }
+    .toc{
+        width: 45%;
+    }
+    .toc .text a{
+        font-size: 10px;
+    }
+    .mission-title{
+        font-size: 12px;
+    }
+    .mission-desc{
+        font-size: 11px;
+    }
 }
