@@ -1,0 +1,94 @@
+.navbar{
+    background-color: rgb(30, 30, 30);
+    z-index: 1;
+}
+.navbar ul li a{
+    color: white;
+}
+.navbar ul li .active{
+    border-bottom: 3px solid white;
+}
+.navbar ul li a:hover{
+    border-bottom: 3px solid white;
+    transition: 0.1s ease-in;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background-color: #F8F8F8;
+    padding-top: 100px;
+}
+
+article{
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    text-align: left;
+}
+
+article ul{
+    width: 100%;
+    padding-left: 200px;
+}
+article ul li{
+    font-weight: 400;
+}
+
+article h1,h2,h3,h4,h5{
+    font-weight: 700;
+    padding: 0 50px;
+    margin-top: 30px;
+}
+article img{
+    margin-bottom: 50px 0;
+    height: 500px;
+    width: 500px;
+}
+
+article p{
+    margin-top: 10px;
+    width: 80%;
+    font-weight: 400;
+}
+
+button{
+    position: fixed;
+    left: 25px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background: url(../assets/prev.svg);
+    background-size: contain;
+    cursor: pointer;
+}
+button a{
+    height: 50px;
+    width: 50px;
+}
+
+@media screen and (max-width:900px){
+    .container{
+        
+    }
+    article{
+        padding: 0;
+        width: 100%;
+    }
+    article img{
+        height: 250px;
+        width: 250px;
+    }
+    article ul{
+        margin-top: 10px;
+        padding-left: 50px;
+    }
+    .articles{
+        display: none;
+    }    
+}
