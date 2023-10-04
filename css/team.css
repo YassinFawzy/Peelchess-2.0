@@ -1,0 +1,144 @@
+.navbar{
+    background-color: rgb(30, 30, 30);
+    z-index: 1;
+}
+.navbar ul li a{
+    color: white;
+}
+.navbar ul li .active{
+    border-bottom: 3px solid white;
+}
+.navbar ul li a:hover{
+    border-bottom: 3px solid white;
+    transition: 0.1s ease-in;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding-top: 85px;
+    background: url(../assets/default-background.svg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #F8F8F8;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+}
+
+.card{
+    margin: 1%;
+    width: 20%;
+    height: 40%;
+    border: 2px solid black;
+    border-radius: 25px;
+    overflow: hidden;
+    flex: 1 1 20%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.card-color{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(30, 30, 30, 0.75);
+    height: 40%;
+}
+
+
+.card-color img{
+    padding: 3%;
+    border-radius: 50%;
+    background-color: white;
+    transform: translateY(50%);
+    width: 100px;
+    height: 100px;
+}
+
+.card-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 10%;
+    height: 60%;
+    width: 100%;
+}
+
+.name{
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+.role{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .name{
+        font-size: 20px;
+    }
+    .role{
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px){
+    .name{
+        font-size: 14px;
+    }
+    .role{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width: 768px){
+    .card-container{
+        width: 98%;
+    }
+    .card{
+        height: 35%;
+        padding-bottom: 5%;
+    }
+    .card-color img{
+        height: 75px;
+        width: 75px;
+        transform: translateY(65%);
+    }
+    .name{
+        font-size: 11px;
+    }
+    .role{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .card-container{
+        width: 98%;
+    }
+    .card{
+        height: 35%;
+        padding-bottom: 5%;
+    }
+    .card-color img{
+        height: 50px;
+        width: 50px;
+        transform: translateY(100%);
+    }
+    .name{
+        font-size: 8px;
+    }
+    .role{
+        font-size: 6px;
+    }
+}
