@@ -25,6 +25,7 @@ html{
     width: 100%;
     padding-top: 85px;
     background: url(../assets/default-background.svg) no-repeat;
+    background-position: center;
     background-size: cover;
     background-color: #F8F8F8;
 }

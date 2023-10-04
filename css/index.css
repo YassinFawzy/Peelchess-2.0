@@ -214,6 +214,10 @@
     .toc{
         width: 45%;
     }
+    .toc img{
+        height: 10px;
+        width: 10px;
+    }
     .toc .text a{
         font-size: 10px;
     }
@@ -221,6 +225,6 @@
         font-size: 12px;
     }
     .mission-desc{
-        font-size: 11px;
+        font-size: 10px;
     }
 }
