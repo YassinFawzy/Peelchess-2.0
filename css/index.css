@@ -169,6 +169,23 @@
     width: 80%;
 }
 
+@media screen and (max-height:700px){
+    .mission-title{
+        font-size: 24px;
+    }
+    .mission-desc{
+        font-size: 16px;
+    }
+}
+@media screen and (max-height:590px){
+    .mission-title{
+        font-size: 18px;
+    }
+    .mission-desc{
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 915px) {
     .first-container{
         justify-content: center;
