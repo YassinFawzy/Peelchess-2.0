@@ -44,17 +44,17 @@
         </div>
         <dialog id="registration">
             <button onclick="closeModal()" style="border: none; background: transparent; font-size: 18px; font-weight: 700; cursor: pointer; float: right;">X</button>
-            <form action="">
-                <input class="input" type="email" placeholder="Email">
-                <input class="input" type="text" placeholder="Chess.com Username">
-                <input class="input" type="text" placeholder="Instagram (optional)">
-                <input class="submit" type="submit" value="Register Now">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfhc8slnq66wOy-4knuOSlz9bhSw80eit523v83kHXJeP8BSw/formResponse" onsubmit="return checkInput()">
+                <input id="input-email" class="input" type="email" placeholder="Email" name="entry.1159338566">
+                <input id="input-username" class="input" type="text" placeholder="Chess.com Username" name="entry.611937096">
+                <input class="input" type="text" placeholder="Instagram (optional)" name="entry.488595812">
+                <input id="submit-button" class="submit" type="submit" value="Register Now">
             </form>
         </dialog>
         <div class="event-container">
             <div class="text">
                 <h1>Tournaments</h1>
-                <h3 class="tourny-title">Halloween Chess Tournament</h3>
+                <h3 class="tourny-title">Christmas Chess Tournament</h3>
                 <p>Welcome to the electrifying world of competitive chess! Our chess
                     tournament brings together brilliant minds from all corners of
                     the globe, where strategy and intellect take center stage.
@@ -67,7 +67,7 @@
                     move matters!</p>
                 <div class="time">
                     <img src="assets/time-inverted.svg">
-                    <p>Tuesday, October 31st, 2023 @ 10 p.m</p>
+                    <p>Monday, December 25th, 2023 @ 10 p.m</p>
                 </div>
                 <button onclick="showModal()">Register Now</button>
             </div>
