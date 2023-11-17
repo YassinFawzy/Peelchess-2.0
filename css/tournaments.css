@@ -400,3 +400,19 @@
         width: 80%;
     }
 }
+
+@media screen and (max-height: 675px){
+    :root{
+        --scale: 85%;
+    }
+    .calendar{
+        scale: var(--scale);
+        transform: translateX(-60%);
+    }
+    .tourny-title{
+        margin-bottom: .5%;
+    }
+    .register{
+        margin-top: .75%;
+    }
+}
