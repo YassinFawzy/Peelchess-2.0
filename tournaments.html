@@ -44,11 +44,17 @@
         </div>
         <dialog id="registration">
             <button onclick="closeModal()" style="border: none; background: transparent; font-size: 18px; font-weight: 700; cursor: pointer; float: right;">X</button>
-            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfhc8slnq66wOy-4knuOSlz9bhSw80eit523v83kHXJeP8BSw/formResponse" onsubmit="return checkInput()">
+            <form id="registrationForm">
                 <input id="input-email" class="input" type="email" placeholder="Email" name="entry.1159338566">
                 <input id="input-username" class="input" type="text" placeholder="Chess.com Username" name="entry.611937096">
-                <input class="input" type="text" placeholder="Instagram (optional)" name="entry.488595812">
-                <input id="submit-button" class="submit" type="submit" value="Register Now">
+                <input id="input-insta" class="input" type="text" placeholder="Instagram (optional)" name="entry.488595812">
+                <select name="entry.1691344913" id="tournament-selection" required>
+                    <option value="select" selected disabled>Select Tournament</option>
+                    <option value="Upcoming Tournament">Christmas Tournament</option>
+                    <option value="Next Tournament">Easter Tournament</option>
+                    <option value="After Next Tournament">Eid Tournament</option>
+                </select>
+                <input id="submit-button" class="submit" type="button" value="Register Now" onclick="submitForm()">
             </form>
         </dialog>
         <div class="event-container">

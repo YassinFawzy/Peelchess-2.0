@@ -201,6 +201,14 @@
     background-color: transparent;
     margin: 2% 0;
 }
+#registration #tournament-selection{
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background-color: transparent;
+    margin: 2% 0;
+}
 .submit{
     width: 70%;
     height: 10%;
@@ -404,6 +412,9 @@
 @media screen and (max-height: 675px){
     :root{
         --scale: 85%;
+    }
+    .upcoming-container{
+        padding-top: 8%;
     }
     .calendar{
         scale: var(--scale);
